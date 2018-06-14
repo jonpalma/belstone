@@ -30,7 +30,7 @@ function send_email() {
 
 		// Set the recipient email address.
 		// FIXME: Update this to your desired email address.
-		$recipient = "pepe.lujan2@gmail.com";
+		$recipient = "ventas@belstone.mx,kaloy123@belatone.mx,jon.palma@orderos.mx";
 
 		// Set the email subject.
 		$subject = "Mensaje enviado desde la forma de contacto del sitio web de Besltone";
