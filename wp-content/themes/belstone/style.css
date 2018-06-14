@@ -836,12 +836,12 @@ a {
     border-radius: 100%;
 }
 
-.sucursales .fancy-title {
+.sucursales .row .fancy-title {
     margin: -40px auto 0 auto;
     max-width: 300px;
 }
 
-.sucursales .fancy-title .title {
+.sucursales .row .fancy-title .title {
     font-size: 25px;
     font-weight: 700;
 }

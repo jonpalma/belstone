@@ -129,9 +129,9 @@
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <div class="servicios" id="servicios">
             <div class="container light-spacing">
-                <h1 class="section-title">
-                    Servicios
-                </h1>
+                <div class="fancy-title center-block">
+                    <h1 class="title">Servicios</h1>
+                </div>
                 <div class="row no-margin">
                     <div class="col-md-3 col-sm-6 grid-element">
                         <a href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/1.jpg" data-toggle="lightbox" data-gallery="gallery-cocina">
@@ -174,9 +174,9 @@
                 <img class="parallax-img" src="<?php echo bloginfo('template_url'); ?>/img/index/parallax/parallax2.jpg" alt="Parallax cotizador">
             </div>
             <div class="container">
-                <h1 class="section-title bg-white">
-                    Cotizador
-                </h1>
+                <div class="fancy-title center-block">
+                    <h1 class="title">Cotizador</h1>
+                </div>
                 <div class="row no-margin">
                     <div class="col-md-offset-3 col-md-3 col-xs-6 grid-element">
                         <div class="img-container dark-overlay" style="background: url(<?php echo bloginfo('template_url'); ?>/img/index/servicios/cocina.jpg) no-repeat center center;">
@@ -212,10 +212,8 @@
 
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <div class="sucursales spacing" id="sucursales">
-            <div class="relative-container text-center">
-                <h1 class="full-width-title">
-                    Sucursales
-                </h1>
+            <div class="fancy-title center-block">
+                <h1 class="title">Sucursales</h1>
             </div>
             <div class="container">
                 <div class="row">
