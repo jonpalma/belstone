@@ -33,8 +33,10 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="<?php if($page != 'index') { echo 'index.php'; }?>#index" class="smoothScroll vertical-align nav-padd">Inicio</a></li>
                         <li><a href="<?php if($page != 'index') { echo 'index.php'; }?>#nosotros" class="smoothScroll vertical-align nav-padd">Nosotros</a></li>
-                        <li><a href="<?php if($page != 'index') { echo 'index.php'; }?>#materiales" class="smoothScroll vertical-align nav-padd">Materiales</a></li>
-                        <li><a href="<?php if($page != 'index') { echo 'index.php'; }?>#contacto" class="smoothScroll vertical-align nav-padd">Contacto</a></li>
+                        <li><a href="<?php if($page != 'index') { echo 'index.php'; }?>#servicios" class="smoothScroll vertical-align nav-padd">Servicios</a></li>
+                        <li><a href="<?php if($page != 'index') { echo 'index.php'; }?>#cotizador" class="smoothScroll vertical-align nav-padd">Cotizaciones</a></li>
+                        <li><a href="<?php if($page != 'index') { echo 'index.php'; }?>#sucursales" class="smoothScroll vertical-align nav-padd">Sucursales</a></li>
+                        <li><a href="<?php if($page != 'index') { echo 'index.php'; }?>#pie" class="smoothScroll vertical-align nav-padd">Contacto</a></li>
                     </ul>
                 </div>
             </div>
