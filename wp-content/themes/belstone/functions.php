@@ -11,6 +11,13 @@ function send_email() {
 		$sucursal = trim($_POST["sucursal"]);
 		$email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
 		$message = trim($_POST["msg"]);
+		$form_type = trim($_POST["form_type"]);
+
+		if($form_type == 'cot') {
+			$city = trim($_POST["city"]);
+			$budget = trim($_POST["budget"]);
+			$type = trim($_POST["type"]);
+		}
 
 
 		// Check that data was sent to the mailer.
@@ -33,15 +40,28 @@ function send_email() {
 		$recipient = "ventas@belstone.mx,kaloy123@belatone.mx,jon.palma@orderos.mx";
 
 		// Set the email subject.
-		$subject = "Mensaje enviado desde la forma de contacto del sitio web de Besltone";
+
+
+		if($form_type == 'cot') {
+			$subject = "Solicitud de cotización enviada del sitio web de Besltone";
+		} else {
+			$subject = "Mensaje enviado desde la forma de contacto del sitio web de Besltone";
+		}
 
 		// Build the email content.
 		$email_content = " \n";
 		if($sucursal)
 			$email_content .= "Sucursal: $sucursal\n";
 		$email_content .= "Nombre: $name <$email>\n";
-		$email_content .= "Tel: $tel\n\n";
-		$email_content .= "Mensaje:\n$message\n";
+		$email_content .= "Tel: $tel\n";
+
+		if($form_type == 'cot') {
+			$email_content .= "Ciudad: $city\n";
+			$email_content .= "Presupuesto: $budget\n";
+			$email_content .= "Tipo: $type\n";
+		}
+
+		$email_content .= "\nMensaje:\n$message\n";
 
 		// Build the email headers.
 		$email_headers = "De: $name <$email>";

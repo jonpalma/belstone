@@ -25,6 +25,7 @@
             <div class="col-sm-4">
                 ¿Dudas? Nostros te ayudamos
                 <form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" class="contact-form footer-form" method="post">
+                    <input type="hidden" name="form_type" value="con">
                     <div class="form-output"></div>
                     <div class="relative-container">
                         <input name="name" type="text" id="name-footer" required>
@@ -71,7 +72,9 @@
 <script>
     $(document).on('click', '[data-toggle="lightbox"]', function(event) {
         event.preventDefault();
-        $(this).ekkoLightbox();
+        $(this).ekkoLightbox({
+            loadingMessage: 'Cargando...'
+        });
     });
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByulHryfKDDbhmb8BoxQoeAHXki5SZ6Lw&callback=initMap"></script>

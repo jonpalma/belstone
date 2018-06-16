@@ -92,8 +92,8 @@ function setHeight($element) {
             $('html, body')
                 .stop()
                 .animate({
-                scrollTop: $anchor.offset().top - fixedElementHeight
-            }, 800);
+                    scrollTop: $anchor.offset().top - fixedElementHeight
+                }, 800);
         }
     };
     $(window).on('hashchange load', function() {
@@ -101,7 +101,7 @@ function setHeight($element) {
     });
 })(jQuery, window)
 
-$('.contact-form input, .contact-form.modal-form textarea').not('input[type=submit]').focusout(function () {
+$('.contact-form input, .contact-form textarea').not('input[type=submit]').focusout(function () {
     var input = $(this);
 
     if(input.val() !== '') {
@@ -136,23 +136,38 @@ $(function() {
             tel = form.find('input[name=tel]'),
             email = form.find('input[name=email]'),
             msg = form.find('textarea[name=msg]'),
+            form_type = form.find('input[name=form_type]'),
             submitBtn = form.find('input[type=submit]');
+
+
         // Stop the browser from submitting the form.
         e.preventDefault();
         submitBtn.val("Enviando...");
+
+        var form_data = {
+            name: name.val(),
+            tel: tel.val(),
+            email: email.val(),
+            msg: msg.val(),
+            action: "contact_form",
+            sucursal: sucursales.chosen,
+            form_type: form_type.val()
+        };
+
+        if(form_type.val() === 'cot') {
+            var city = form.find('input[name=city]'),
+                budget = form.find('select[name=budget]'),
+                type = form.find('select[name=type]');
+            form_data.city = city.val();
+            form_data.budget = budget.val();
+            form_data.type = type.val();
+        }
 
         // Submit the form using AJAX.
         $.ajax({
             type: 'POST',
             url: $(form).attr('action'),
-            data: {
-                name: name.val(),
-                tel: tel.val(),
-                email: email.val(),
-                msg: msg.val(),
-                action: "contact_form",
-                sucursal: sucursales.chosen
-            }
+            data: form_data
         })
             .done(function(response) {
                 // Make sure that the formMessages div has the 'success' class.
@@ -168,6 +183,12 @@ $(function() {
                 email.val('');
                 msg.val('');
                 submitBtn.val("Enviar");
+
+                if(form_type.val() === 'cot') {
+                    city.val('');
+                    budget.val('');
+                    type.val('');
+                }
             })
             .fail(function(data) {
                 // Make sure that the formMessages div has the 'error' class.
@@ -177,11 +198,14 @@ $(function() {
                 // Set the message text.
                 if (data.responseText !== '') {
                     formMessages.text(data.responseText);
-                    submitBtn.text("Enviar");
+                    submitBtn.val("Enviar");
                 } else {
                     formMessages.text('Oops! Ocurrido un error no se pudo enviar la forma.');
-                    submitBtn.text("Enviar");
+                    submitBtn.val("Enviar");
                 }
+            })
+            .always(function () {
+                $('.has-contetn').removeClass('has-content');
             });
 
     });

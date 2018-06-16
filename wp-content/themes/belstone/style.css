@@ -240,6 +240,7 @@ a {
 }
 
 .contact-form input:not([type=submit]),
+.contact-form select,
 .contact-form textarea {
     background-color: transparent;
     width: 100%;
@@ -254,14 +255,44 @@ a {
     resize: none;
 }
 
+.contact-form.cot-form input:not([type=submit]),
+.contact-form.cot-form select,
+.contact-form.cot-form textarea {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.contact-form.cot-form textarea {
+    max-height: 114px;
+}
+
 .contact-form label {
     position: absolute;
     top: 25px;
+    left: 0;
     margin-left: 15px;
     color: #aaa;
     font-size: 16px;
     transition: all 300ms ease;
     cursor: text;
+}
+
+.contact-form.cot-form label,
+.contact-form.cot-form select {
+    color: #eee;
+}
+
+.contact-form.cot-form select {
+    padding: 10px 0 10px 10px;
+    margin-bottom: 10px;
+}
+
+.contact-form.cot-form select option {
+    color: #000;
+}
+
+.contact-form.cot-form select option:nth-of-type(1) {
+    color: #aaa;
 }
 
 .contact-form.modal-form {
@@ -726,8 +757,8 @@ a {
     width: 50vw;
     left: 50%;
     background-size: cover!important;
-    -webkit-clip-path: polygon(94px 0%, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(94px 0%, 100% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(104px 0%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(104px 0%, 100% 0, 100% 100%, 0% 100%);
 }
 
 #index #nosotros .row {
@@ -814,7 +845,7 @@ a {
     padding: 25px 5px 0 5px;
 }
 
-.cotizador .btn-step button {
+.cotizador .btn-step input[type=submit] {
     padding: 15px 0;
     width: 100%;
     border: 0;
@@ -873,6 +904,54 @@ a {
     font-weight: 700;
     color: #fff;
     margin: 0 auto 20px auto;
+}
+
+.sucursales .map-btn {
+    position: relative;
+    cursor: pointer;
+}
+.sucursales .map-btn:before,
+.sucursales .map-btn:after {
+    position: absolute;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.sucursales .map-btn:before {
+    content: '\f00e';
+    font-family: 'FontAwesome', sans-serif;
+    font-size: 50px;
+    color: #F29D00;
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    z-index: 11;
+}
+
+.sucursales .map-btn:after {
+    content: '';
+    top: 0;
+    left: 20px;
+    width: calc(100% - 40px);
+    height: 100%;
+    background-color: #000;
+    z-index: 10;
+}
+
+.sucursales .map-btn:hover:before {
+    opacity: 1;
+}
+
+.sucursales .map-btn:hover:after {
+    opacity: .2;
 }
 
 /* MATERIALES */
@@ -1143,9 +1222,10 @@ a {
     color: rgba(242, 157, 0, 1);
 }
 
-
-
-
+/* MODAL MAP */
+#map-modal .modal-google-map {
+    height: 400px;
+}
 
 /***** PIE *****/
 #pie {

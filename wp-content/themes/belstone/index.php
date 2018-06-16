@@ -10,38 +10,38 @@
             <div id="carousel-banner" class="carousel slide" data-ride="carousel">
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
-                    <?php
-                    $arrayItem = CFS()->get('banner_array');
-                    if($arrayItem)
-                    {
-                        foreach($arrayItem as $key => $item)
-                        {
-                            if($key == 0)
-                            {
-                                echo '<div class="item active">';
-                            }
-                            else
-                            {
-                                echo '</div>';
-                                echo '<div class="item">';
-                            }
-                            ?>
+					<?php
+					$arrayItem = CFS()->get('banner_array');
+					if($arrayItem)
+					{
+						foreach($arrayItem as $key => $item)
+						{
+							if($key == 0)
+							{
+								echo '<div class="item active">';
+							}
+							else
+							{
+								echo '</div>';
+								echo '<div class="item">';
+							}
+							?>
                             <div class="img-container" style="background: url(<?php echo $item['banner_array_img'];?>) no-repeat center center;"></div>
                             <div class="container">
                                 <div class="vertical-align">
                                     <div class="content">
                                         <h1>
-                                            <?php echo $item['banner_array_title'];?><br>
+											<?php echo $item['banner_array_title'];?><br>
                                             <span><?php echo $item['banner_array_subtitle'];?></span>
                                         </h1>
                                     </div>
                                 </div>
                             </div>
-                            <?php
-                        }
-                        echo '</div>';
-                    }
-                    ?>
+							<?php
+						}
+						echo '</div>';
+					}
+					?>
                 </div>
                 <!-- Controls -->
                 <div class="controls">
@@ -54,27 +54,27 @@
                 </div>
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
-                    <?php
-                    $arrayItem = CFS()->get('banner_array');
-                    if($arrayItem)
-                    {
-                        foreach($arrayItem as $key => $item)
-                        {
-                            if($key == 0)
-                            {
-                                echo '<li data-target="#carousel-banner" data-slide-to="'.$key.'" class="active"></li>';
-                            }
-                            else
-                            {
-                                echo '<li data-target="#carousel-banner" data-slide-to="'.$key.'"></li>';
-                            }
-                        }
-                    }
-                    else
-                    {
-                        echo '<li data-target="#carousel-banner" data-slide-to="0" class="active"></li>';
-                    }
-                    ?>
+					<?php
+					$arrayItem = CFS()->get('banner_array');
+					if($arrayItem)
+					{
+						foreach($arrayItem as $key => $item)
+						{
+							if($key == 0)
+							{
+								echo '<li data-target="#carousel-banner" data-slide-to="'.$key.'" class="active"></li>';
+							}
+							else
+							{
+								echo '<li data-target="#carousel-banner" data-slide-to="'.$key.'"></li>';
+							}
+						}
+					}
+					else
+					{
+						echo '<li data-target="#carousel-banner" data-slide-to="0" class="active"></li>';
+					}
+					?>
                 </ol>
             </div>
         </div>
@@ -90,15 +90,15 @@
                         <div class="align-right">
                             <div class="fancy-title">
                                 <h1 class="title">
-                                    <?php echo CFS()->get('nosotros_title');?>
+									<?php echo CFS()->get('nosotros_title');?>
                                 </h1>
                             </div>
                         </div>
                         <h2>
-                            <?php echo CFS()->get('nosotros_text_title');?>
+							<?php echo CFS()->get('nosotros_text_title');?>
                         </h2>
                         <p>
-                            <?php echo CFS()->get('nosotros_text');?>
+							<?php echo CFS()->get('nosotros_text');?>
                         </p>
                     </div>
                     <div class="col-sm-6"></div>
@@ -117,7 +117,7 @@
             </div>
             <div class="container spacing">
                 <h1>
-                    <?php echo CFS()->get('parallax_1_title');?><br>
+					<?php echo CFS()->get('parallax_1_title');?><br>
                     <span><?php echo CFS()->get('parallax_1_subtitle');?></span>
                 </h1>
             </div>
@@ -177,33 +177,59 @@
                 <div class="fancy-title center-block">
                     <h1 class="title">Cotizador</h1>
                 </div>
-                <div class="row no-margin">
-                    <div class="col-md-offset-3 col-md-3 col-xs-6 grid-element">
-                        <div class="img-container dark-overlay" style="background: url(<?php echo bloginfo('template_url'); ?>/img/index/servicios/cocina.jpg) no-repeat center center;">
-                            <div class="title">Cocina</div>
+                <form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" class="contact-form footer-form cot-form">
+                    <input type="hidden" name="form_type" value="cot">
+                    <div class="row no-margin">
+                        <div class="col-md-offset-3 col-md-6">
+                            <div class="form-output"></div>
+                        </div>
+                        <div class="col-md-offset-3 col-md-3 grid-element">
+                            <div class="relative-container">
+                                <input name="name" type="text" id="name-cot" required>
+                                <label for="name-cot">Nombre</label>
+                            </div>
+                            <div class="relative-container">
+                                <input name="tel" type="tel" id="tel-cot" required>
+                                <label for="tel-cot">Teléfono</label>
+                            </div>
+                            <div class="relative-container">
+                                <input name="email" type="email" id="email-cot" required>
+                                <label for="email-cot">Correo</label>
+                            </div>
+                            <div class="relative-container">
+                                <input name="city" type="text" id="city-cot" required>
+                                <label for="city-cot">Ciudad</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3 grid-element">
+                            <div class="relative-container">
+                                <select name="budget" id="budget" required>
+                                    <option value="null" disabled selected>-- SELECCIONAR --</option>
+                                    <option value="$3,000 - $10,000">$3,000 - $10,000</option>
+                                    <option value="$10,000 - $30,000">$10,000 - $30,000</option>
+                                    <option value="$30,000 - $50,000">$30,000 - $50,000</option>
+                                    <option value="Más de $50,000">Más de $50,000</option>
+                                </select>
+                            </div>
+                            <div class="relative-container">
+                                <select name="type" id="type" required>
+                                    <option value="null" disabled selected>-- SELECCIONAR --</option>
+                                    <option value="Cocina">Cocina</option>
+                                    <option value="Baño">Baño</option>
+                                    <option value="Lápida">Lápida</option>
+                                    <option value="Material">Material</option>
+                                </select>
+                            </div>
+                            <div class="relative-container">
+                                <textarea name="msg" id="msg-cot" rows="4" required></textarea>
+                                <label for="msg-cot">Message</label>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-xs-6 grid-element">
-                        <div class="img-container dark-overlay" style="background: url(<?php echo bloginfo('template_url'); ?>/img/index/servicios/baños.jpg) no-repeat center center;">
-                            <div class="title">Baños</div>
-                        </div>
+                    <div class="col-md-offset-3 col-md-6 btn-step">
+                        <input type="submit" value="Enviar">
                     </div>
-                </div>
-                <div class="row no-margin">
-                    <div class="col-md-offset-3 col-md-3 col-xs-6 grid-element">
-                        <div class="img-container dark-overlay" style="background: url(<?php echo bloginfo('template_url'); ?>/img/index/servicios/lapidas.jpg) no-repeat center center;">
-                            <div class="title">Lápidas</div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-xs-6 grid-element">
-                        <div class="img-container dark-overlay" style="background: url(<?php echo bloginfo('template_url'); ?>/img/index/servicios/materiales.jpg) no-repeat center center;">
-                            <div class="title">Materiales</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-offset-3 col-md-6 btn-step">
-                    <button>Siguiente</button>
-                </div>
+                </form>
             </div>
         </div>
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -219,7 +245,9 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-6 text-center">
                         <div class="grid-element">
-                            <div class="img-container" style="background: url(<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/1.jpg) no-repeat center center;"></div>
+                            <a href="<?php echo bloginfo('template_url'); ?>/img/index/sucursales/1.jpg" data-toggle="lightbox" data-gallery="gallery-suc">
+                                <div class="img-container" style="background: url(<?php echo bloginfo('template_url'); ?>/img/index/sucursales/1_thumb.jpg) no-repeat center center;"></div>
+                            </a>
                         </div>
                         <div class="fancy-title">
                             <h2 class="title">Matríz</h2>
@@ -231,12 +259,16 @@
                                 <span class="phone">Tel. 420 59 26</span>
                             </p>
                         </div>
-                        <div class="googleMap" data-lat="28.618104" data-long="-106.055500" data-title="Matríz"></div>
+                        <div class="map-btn">
+                            <div class="googleMap" data-lat="28.618104" data-long="-106.055500" data-title="Matríz"></div>
+                        </div>
                         <button class="btn-msg" data-toggle="modal" data-target="#contact-modal" data-sucursal="Matríz">Mensaje</button>
                     </div>
                     <div class="col-md-3 col-sm-6 text-center">
                         <div class="grid-element">
-                            <div class="img-container" style="background: url(<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/1.jpg) no-repeat center center;"></div>
+                            <a href="<?php echo bloginfo('template_url'); ?>/img/index/sucursales/2.jpg" data-toggle="lightbox" data-gallery="gallery-suc">
+                                <div class="img-container" style="background: url(<?php echo bloginfo('template_url'); ?>/img/index/sucursales/2_thumb.jpg) no-repeat center center;"></div>
+                            </a>
                         </div>
                         <div class="fancy-title">
                             <h2 class="title">Américas</h2>
@@ -249,12 +281,16 @@
                                 <span class="phone">Tel. 388 24 00 / 388 24 01</span>
                             </p>
                         </div>
-                        <div class="googleMap" data-lat="28.655537" data-long="-106.110865" data-title="Américas"></div>
+                        <div class="map-btn">
+                            <div class="googleMap" data-lat="28.655537" data-long="-106.110865" data-title="Américas"></div>
+                        </div>
                         <button class="btn-msg" data-toggle="modal" data-target="#contact-modal" data-sucursal="Américas">Mensaje</button>
                     </div>
                     <div class="col-md-3 col-sm-6 text-center">
                         <div class="grid-element">
-                            <div class="img-container" style="background: url(<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/1.jpg) no-repeat center center;"></div>
+                            <a href="<?php echo bloginfo('template_url'); ?>/img/index/sucursales/3.jpg" data-toggle="lightbox" data-gallery="gallery-suc">
+                                <div class="img-container" style="background: url(<?php echo bloginfo('template_url'); ?>/img/index/sucursales/3_thumb.jpg) no-repeat center center;"></div>
+                            </a>
                         </div>
                         <div class="fancy-title">
                             <h2 class="title">Juventud</h2>
@@ -266,12 +302,16 @@
                                 <span class="phone">Tel. 389 88 87 / 389 88 88</span>
                             </p>
                         </div>
-                        <div class="googleMap" data-lat="28.643225" data-long="-106.124336" data-title="Juventud"></div>
+                        <div class="map-btn">
+                            <div class="googleMap" data-lat="28.643225" data-long="-106.124336" data-title="Juventud"></div>
+                        </div>
                         <button class="btn-msg" data-toggle="modal" data-target="#contact-modal" data-sucursal="Juventud">Mensaje</button>
                     </div>
                     <div class="col-md-3 col-sm-6 text-center">
                         <div class="grid-element">
-                            <div class="img-container" style="background: url(<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/1.jpg) no-repeat center center;"></div>
+                            <a href="<?php echo bloginfo('template_url'); ?>/img/index/sucursales/4.jpg" data-toggle="lightbox" data-gallery="gallery-suc">
+                                <div class="img-container" style="background: url(<?php echo bloginfo('template_url'); ?>/img/index/sucursales/4_thumb.jpg) no-repeat center center;"></div>
+                            </a>
                         </div>
                         <div class="fancy-title">
                             <h2 class="title">Relíz</h2>
@@ -283,12 +323,19 @@
                                 <span class="phone">Tel. 688 77 54 / 614 241 7180</span>
                             </p>
                         </div>
-                        <div class="googleMap" data-lat="28.598417" data-long="-106.125740" data-title="Relíz"></div>
+                        <div class="map-btn">
+                            <div class="googleMap" data-lat="28.598417" data-long="-106.125740" data-title="Relíz"></div>
+                        </div>
                         <button class="btn-msg" data-toggle="modal" data-target="#contact-modal" data-sucursal="Relíz">Mensaje</button>
                     </div>
                 </div>
             </div>
         </div>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+        <!--/* MODAL CONTACTO */-->
+
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <div id="contact-modal" class="modal fade" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -297,6 +344,7 @@
                     </div>
                     <div class="modal-body">
                         <form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" class="contact-form modal-form" method="post">
+                            <input type="hidden" name="form_type" value="con">
                             <div class="form-output"></div>
                             <div class="relative-container">
                                 <input name="name" type="text" id="name" required>
@@ -316,6 +364,23 @@
                             </div>
                             <input type="submit" value="Enviar">
                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+        <!--/* MODAL MAPA */-->
+
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div id="map-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-google-map"></div>
                     </div>
                 </div>
             </div>
