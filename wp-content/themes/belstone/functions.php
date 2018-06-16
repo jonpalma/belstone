@@ -52,7 +52,8 @@ function send_email() {
 		$email_content = " \n";
 		if($sucursal)
 			$email_content .= "Sucursal: $sucursal\n";
-		$email_content .= "Nombre: $name <$email>\n";
+		$email_content .= "Nombre: $name\n";
+		$email_content .= "Email: $email\n";
 		$email_content .= "Tel: $tel\n";
 
 		if($form_type == 'cot') {
