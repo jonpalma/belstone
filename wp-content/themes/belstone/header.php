@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+        <meta name="description" content="Somos proveedores de mármol y granito importado de todo el mundo. Para brindarte el servicio de cocinas, baños, lápidas de mármol y granito en Chihuahua.">
+        <meta name="keywords" content="cocinas, baños, materiales de granito, mármol, lápidas, piedras, chihuahua">
         <meta name="author" content="Mixen">
         <link rel="shortcut icon" type="img/png" href="<?php echo bloginfo('template_url').'/'; ?>img/favicon.ico"/>
         <link rel="stylesheet" href="<?php echo bloginfo('template_url').'/'; ?>css/ekko-lightbox.min.css">
         <link rel="stylesheet" href="<?php echo bloginfo('template_url').'/'; ?>css/font-awesome.min.css">
         <link rel="stylesheet" href="<?php echo bloginfo('template_url').'/'; ?>css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
-        <title>BelStone</title>
+        <title>BelStone - Cocinas, baños y lápidas de mármol y granito en Chihuahua</title>
         <?php wp_head(); ?>
         <script src="<?php echo bloginfo('template_url').'/'; ?>js/jquery-1.12.0.min.js"></script>
     </head>

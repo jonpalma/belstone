@@ -8,11 +8,12 @@
         <div class="row no-margin">
             <div class="col-sm-4">
                 <p>
-                    Vialidad CHP #1216 Col. Dale<br>
+                    MATRÍZ <br>
+                    Vialidad CHP #1216 Colonia Dale Chihuahua<br>
                     <strong>VENTAS</strong> 614 290 1280<br>
                     <strong>OFICINA</strong> 614 420 5926<br>
-                    kaloy123@hotmail.com<br>
-                    <a href="https://www.facebook.com/Belstone-421383904991375/" target="_blank"><i class="fa fa-facebook-square"></i><span>&nbsp;/belstone</span></a>
+                    ventas@belstone.com<br>
+                    <a href="https://www.facebook.com/Belstone.mx/" target="_blank"><i class="fa fa-facebook-square"></i><span>&nbsp;/belstone.mx</span></a>
                 </p>
             </div>
             <div class="col-sm-4">

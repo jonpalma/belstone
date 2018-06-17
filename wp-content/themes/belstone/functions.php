@@ -31,7 +31,7 @@ function send_email() {
 		if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 			// Set a 400 (bad request) response code and exit.
 			http_response_code(400);
-			echo "Oops! Hubo un error con su envío. Por favor asegúrese de que su correo siga el formato correo@ejemplo.com";
+			echo "Oops! Hubo un error con su envío. Por favor asegúrese de que su correo siga el formato ventas@belstone.mx";
 			exit;
 		}
 

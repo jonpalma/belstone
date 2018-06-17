@@ -46,10 +46,10 @@
                 <!-- Controls -->
                 <div class="controls">
                     <a class="left carousel-control" href="#carousel-banner" role="button" data-slide="prev">
-                        <span class="sr-only">Previous</span>
+                        <span class="sr-only">Siguiente</span>
                     </a>
                     <a class="right carousel-control" href="#carousel-banner" role="button" data-slide="next">
-                        <span class="sr-only">Next</span>
+                        <span class="sr-only">Anterior</span>
                     </a>
                 </div>
                 <!-- Indicators -->
@@ -203,17 +203,8 @@
                         </div>
                         <div class="col-md-3 grid-element">
                             <div class="relative-container">
-                                <select name="budget" id="budget" required>
-                                    <option value="null" disabled selected>-- SELECCIONAR --</option>
-                                    <option value="$3,000 - $10,000">$3,000 - $10,000</option>
-                                    <option value="$10,000 - $30,000">$10,000 - $30,000</option>
-                                    <option value="$30,000 - $50,000">$30,000 - $50,000</option>
-                                    <option value="Más de $50,000">Más de $50,000</option>
-                                </select>
-                            </div>
-                            <div class="relative-container">
                                 <select name="type" id="type" required>
-                                    <option value="null" disabled selected>-- SELECCIONAR --</option>
+                                    <option value="null" disabled selected>-- Servicio --</option>
                                     <option value="Cocina">Cocina</option>
                                     <option value="Baño">Baño</option>
                                     <option value="Lápida">Lápida</option>
@@ -221,8 +212,17 @@
                                 </select>
                             </div>
                             <div class="relative-container">
+                                <select name="budget" id="budget" required>
+                                    <option value="null" disabled selected>-- Presupuesto --</option>
+                                    <option value="$3,000 - $10,000">$3,000 - $10,000</option>
+                                    <option value="$10,000 - $30,000">$10,000 - $30,000</option>
+                                    <option value="$30,000 - $50,000">$30,000 - $50,000</option>
+                                    <option value="Más de $50,000">Más de $50,000</option>
+                                </select>
+                            </div>
+                            <div class="relative-container">
                                 <textarea name="msg" id="msg-cot" rows="4" required></textarea>
-                                <label for="msg-cot">Message</label>
+                                <label for="msg-cot">Mensaje</label>
                             </div>
                         </div>
                     </div>
@@ -256,7 +256,7 @@
                             <p>
                                 Vialidad CH-P #1216<br>
                                 Col. Dale<br>
-                                <span class="phone">Tel. 420 59 26</span>
+                                <span class="phone">Tel. (614) 420 59 26</span>
                             </p>
                         </div>
                         <div class="map-btn">
@@ -277,8 +277,7 @@
                             <p>
                                 Av. Américas #10000<br>
                                 Col. Panamericana<br>
-                                (casi esquina con Río Janeiro)<br>
-                                <span class="phone">Tel. 388 24 00 / 388 24 01</span>
+                                <span class="phone">Tel. (614) 388 24 00 / (614) 388 24 01</span>
                             </p>
                         </div>
                         <div class="map-btn">
@@ -299,7 +298,7 @@
                             <p>
                                 Perif. De la Juventud #7134<br>
                                 Fracc. Cumbres<br>
-                                <span class="phone">Tel. 389 88 87 / 389 88 88</span>
+                                <span class="phone">Tel. (614) 389 88 87 / (614) 389 88 88</span>
                             </p>
                         </div>
                         <div class="map-btn">
@@ -320,7 +319,7 @@
                             <p>
                                 Av. Teófilo Borunda #11802<br>
                                 Plaza Castilla Reliz #1<br>
-                                <span class="phone">Tel. 688 77 54 / 614 241 7180</span>
+                                <span class="phone">Tel. (614) 688 77 54 / (614) 241 7180</span>
                             </p>
                         </div>
                         <div class="map-btn">
