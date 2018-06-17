@@ -14,6 +14,16 @@
         <title>BelStone - Cocinas, baños y lápidas de mármol y granito en Chihuahua</title>
         <?php wp_head(); ?>
         <script src="<?php echo bloginfo('template_url').'/'; ?>js/jquery-1.12.0.min.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120964879-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-120964879-1');
+        </script>
+
     </head>
     <body>
         <nav class="navbar navbar-default">
