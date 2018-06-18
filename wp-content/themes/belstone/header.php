@@ -29,7 +29,7 @@
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <a href="<?php if($page != 'index') { echo 'index.php'; }?>#index" class="smoothScroll nav-logo">
-                    <img src="<?php echo bloginfo('template_url').'/'; ?>img/icons/logo.png" alt="logo" class="vertical-align">
+                    <img src="<?php echo bloginfo('template_url').'/'; ?>img/icons/logo.png" alt="Logotipo Belstone" class="vertical-align">
                 </a>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">

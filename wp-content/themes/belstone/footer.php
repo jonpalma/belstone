@@ -6,10 +6,10 @@
 <div class="pie" id="pie">
     <div class="container light-spacing">
         <div class="row no-margin">
-            <div class="col-sm-4">
+            <div class="col-sm-4 pie-text">
                 <p>
                     MATRÍZ <br>
-                    Vialidad CHP #1216 Colonia Dale Chihuahua<br>
+                    Vialidad CHP #1216 Colonia Dale Chihuahua, México.<br>
                     <strong>VENTAS</strong> 614 290 1280<br>
                     <strong>OFICINA</strong> 614 420 5926<br>
                     ventas@belstone.com<br>
@@ -23,7 +23,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 pie-text">
                 ¿Dudas? Nostros te ayudamos
                 <form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" class="contact-form footer-form" method="post">
                     <input type="hidden" name="form_type" value="con">

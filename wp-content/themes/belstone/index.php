@@ -134,31 +134,120 @@
                 </div>
                 <div class="row no-margin">
                     <div class="col-md-3 col-sm-6 grid-element">
-                        <a href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/1.jpg" data-toggle="lightbox" data-gallery="gallery-cocina">
+                        <a href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/2.jpg" data-toggle="lightbox" data-gallery="gallery-cocina">
                             <div class="img-grid img-container" style="background: url(<?php echo bloginfo('template_url'); ?>/img/index/servicios/cocina.jpg) no-repeat center center;"></div>
                         </a>
                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/2.jpg" data-gallery="gallery-cocina"></span>
                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/3.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/4.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/6.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/7.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/9.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/10.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/12.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/13.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/15.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/16.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/17.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/18.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/19.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/20.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/22.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/24.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/25.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/26.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/27.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/28.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/29.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/30.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/32.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/34.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/35.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/36.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/38.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/39.jpg" data-gallery="gallery-cocina"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/40.jpg" data-gallery="gallery-cocina"></span>
                         <div class="title">Cocinas</div>
                     </div>
                     <div class="col-md-3 col-sm-6 grid-element">
-                        <a href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/1.jpg" data-toggle="lightbox" data-gallery="gallery-baños">
+                        <a href="<?php echo bloginfo('template_url'); ?>/img/galeria/baños/1.jpg" data-toggle="lightbox" data-gallery="gallery-banos">
                             <div class="img-grid img-container" style="background: url(<?php echo bloginfo('template_url'); ?>/img/index/servicios/baños.jpg) no-repeat center center;"></div>
                         </a>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/baños/2.jpg" data-gallery="gallery-banos"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/baños/3.jpg" data-gallery="gallery-banos"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/baños/4.jpg" data-gallery="gallery-banos"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/baños/5.jpg" data-gallery="gallery-banos"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/baños/6.jpg" data-gallery="gallery-banos"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/baños/7.jpg" data-gallery="gallery-banos"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/baños/8.jpg" data-gallery="gallery-banos"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/baños/9.jpg" data-gallery="gallery-banos"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/baños/10.jpg" data-gallery="gallery-banos"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/baños/11.jpg" data-gallery="gallery-banos"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/baños/12.jpg" data-gallery="gallery-banos"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/baños/13.jpg" data-gallery="gallery-banos"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/baños/14.jpg" data-gallery="gallery-banos"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/baños/15.jpg" data-gallery="gallery-banos"></span>
+
                         <div class="title">Baños</div>
                     </div>
                     <div class="col-md-3 col-sm-6 grid-element">
-                        <a href="<?php echo bloginfo('template_url'); ?>/img/galeria/cocinas/1.jpg" data-toggle="lightbox" data-gallery="gallery-lapidas">
+                        <a href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-6.jpg" data-toggle="lightbox" data-gallery="gallery-lapidas">
                             <div class="img-grid img-container" style="background: url(<?php echo bloginfo('template_url'); ?>/img/index/servicios/lapidas.jpg) no-repeat center center;"></div>
                         </a>
+
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-8.jpg" data-gallery="gallery-lapidas"></span>
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-10.jpg" data-gallery="gallery-lapidas"></span>
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-12.jpg" data-gallery="gallery-lapidas"></span>
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-14.jpg" data-gallery="gallery-lapidas"></span>
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-16.jpg" data-gallery="gallery-lapidas"></span>
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-17.jpg" data-gallery="gallery-lapidas"></span>
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-20.jpg" data-gallery="gallery-lapidas"></span>
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-21.jpg" data-gallery="gallery-lapidas"></span>
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-22.jpg" data-gallery="gallery-lapidas"></span>
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-25.jpg" data-gallery="gallery-lapidas"></span>
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-26.jpg" data-gallery="gallery-lapidas"></span>
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-28.jpg" data-gallery="gallery-lapidas"></span>
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-33.jpg" data-gallery="gallery-lapidas"></span>
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-34.jpg" data-gallery="gallery-lapidas"></span>
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-36.jpg" data-gallery="gallery-lapidas"></span>
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-40.jpg" data-gallery="gallery-lapidas"></span>
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-43.jpg" data-gallery="gallery-lapidas"></span>
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-46.jpg" data-gallery="gallery-lapidas"></span>
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-47.jpg" data-gallery="gallery-lapidas"></span>
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-49.jpg" data-gallery="gallery-lapidas"></span>
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-50.jpg" data-gallery="gallery-lapidas"></span>
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-51.jpg" data-gallery="gallery-lapidas"></span>
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-56.jpg" data-gallery="gallery-lapidas"></span>
+                         <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/lápidas/L-58.jpg" data-gallery="gallery-lapidas"></span>
+
                         <div class="title">Lápidas</div>
+
+
                     </div>
                     <div class="col-md-3 col-sm-6 grid-element">
-                        <a href="<?php echo bloginfo('template_url'); ?>/img/materiales/1.jpg" data-toggle="lightbox" data-gallery="gallery-materiales">
+                        <a href="<?php echo bloginfo('template_url'); ?>/img/galeria/materiales/1.jpg" data-toggle="lightbox" data-gallery="gallery-materiales">
                             <div class="img-grid img-container" style="background: url(<?php echo bloginfo('template_url'); ?>/img/index/servicios/materiales.jpg) no-repeat center center;"></div>
                         </a>
-                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/materiales/2.jpg" data-gallery="gallery-materiales"></span>
-                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/materiales/3.jpg" data-gallery="gallery-materiales"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/materiales/2.jpg" data-gallery="gallery-materiales"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/materiales/3.jpg" data-gallery="gallery-materiales"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/materiales/4.jpg" data-gallery="gallery-materiales"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/materiales/5.jpg" data-gallery="gallery-materiales"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/materiales/6.jpg" data-gallery="gallery-materiales"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/materiales/7.jpg" data-gallery="gallery-materiales"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/materiales/8.jpg" data-gallery="gallery-materiales"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/materiales/9.jpg" data-gallery="gallery-materiales"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/materiales/10.jpg" data-gallery="gallery-materiales"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/materiales/11.jpg" data-gallery="gallery-materiales"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/materiales/12.jpg" data-gallery="gallery-materiales"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/materiales/13.jpg" data-gallery="gallery-materiales"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/materiales/14.jpg" data-gallery="gallery-materiales"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/materiales/15.jpg" data-gallery="gallery-materiales"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/materiales/16.jpg" data-gallery="gallery-materiales"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/materiales/17.jpg" data-gallery="gallery-materiales"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/materiales/18.jpg" data-gallery="gallery-materiales"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/materiales/19.jpg" data-gallery="gallery-materiales"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/materiales/20.jpg" data-gallery="gallery-materiales"></span>
+                        <span class="hidden" href="<?php echo bloginfo('template_url'); ?>/img/galeria/materiales/21.jpg" data-gallery="gallery-materiales"></span>
                         <div class="title">Materiales</div>
                     </div>
                 </div>
@@ -171,7 +260,7 @@
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <div class="cotizador spacing parallax-container" id="cotizador">
             <div class="parallax-element">
-                <img class="parallax-img" src="<?php echo bloginfo('template_url'); ?>/img/index/parallax/parallax2.jpg" alt="Parallax cotizador">
+                <img class="parallax-img" src="<?php echo bloginfo('template_url'); ?>/img/index/parallax/parallax2.jpg" alt="Belstone cotizador">
             </div>
             <div class="container">
                 <div class="fancy-title center-block">
